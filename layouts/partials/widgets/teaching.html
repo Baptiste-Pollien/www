@@ -1,0 +1,36 @@
+{{ $st := .page }}
+
+<div class="row">
+  <div class="col-12 col-lg-4 section-heading">
+    {{ with $st.Title }}<h1>{{ . | markdownify | emojify }}</h1>{{ end }}
+  </div>
+  <div class="col-12 col-lg-8">
+    {{ with $st.Params.assistant }}
+      <h2>Teaching assistant</h2>
+      {{ $years := slice }}
+      {{ range . }}
+	      {{ $years = $years | append .year }}
+      {{ end }}
+      {{ $years = sort $years "value" "desc" | uniq }}
+      {{ range $years }}
+        {{ $year := . }}
+        <h4>{{ $year | markdownify }}</h4>
+        <ul>
+          {{ range where $st.Params.assistant "year" $year }}
+            {{ $link := .url }}
+            {{ $scheme := (urls.Parse $link).Scheme }}
+            {{ $target := "" }}
+            {{ if not $scheme }}
+              {{ $link = .url | relLangURL }}
+            {{ else if in (slice "http" "https") $scheme }}
+              {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
+            {{ end }}
+            <li>
+              <a href="{{ $link | safeURL }}" {{ $target | safeHTMLAttr }}>{{ .title | markdownify }}</a>, {{ .university }}, {{ .level | markdownify}}
+            </li>
+          {{ end }}
+        </ul>
+      {{ end }}
+    {{ end }}
+  </div>
+</div>

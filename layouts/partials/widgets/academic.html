@@ -1,0 +1,26 @@
+{{ $st := .page }}
+
+<div class="row">
+  <div class="col-12 col-lg-4 section-heading">
+    {{ with $st.Title }}<h1>{{ . | markdownify | emojify }}</h1>{{ end }}
+  </div>
+  <div class="col-12 col-lg-8">
+    {{ with $st.Params.service }}
+    <ul>
+      {{ range sort . ".year" "desc" }}
+      {{ $link := .url }}
+      {{ $scheme := (urls.Parse $link).Scheme }}
+      {{ $target := "" }}
+      {{ if not $scheme }}
+        {{ $link = .url | relLangURL }}
+      {{ else if in (slice "http" "https") $scheme }}
+        {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
+      {{ end }}
+      <li>
+        <a href="{{ $link | safeURL }}" {{ $target | safeHTMLAttr }}>{{ .event | markdownify }}'{{ slicestr .year 2 }}</a>, {{ .role | markdownify}}
+      </li>
+      {{ end }}
+    </ul>
+    {{ end }}
+  </div>
+</div>
