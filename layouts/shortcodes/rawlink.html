@@ -1,0 +1,2 @@
+{{ $file := $.Page.Resources.GetMatch (.Get 1)}}
+<a href="{{ $file.RelPermalink }}" target="_blank">{{ .Get 0 | markdownify }}</a>

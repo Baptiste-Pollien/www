@@ -1,0 +1,10 @@
+{{- $id := .Get 0 -}}
+{{- range where .Site.Data.url.url "id" $id -}}
+<a href={{ .link }} target="_blank">
+  {{- if and (len $.Params | eq 2) ($.Get 1) -}}
+    {{- default .id .short -}}
+  {{- else -}}
+    {{- default .id .name -}}
+  {{- end -}}
+</a>
+{{- end -}}
