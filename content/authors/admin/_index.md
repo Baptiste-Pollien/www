@@ -29,7 +29,7 @@ education:
   - course: PhD in Formal Methods
     institution: ISAE-SUPAERO - Toulouse, FRANCE
     year: Present
-  - course: Engineering Degree
+  - course: Master’s Degree in Engineering
     institution: ENSIMAG - Grenoble, FRANCE
     year: 2020 - 2017
   - course: Preparation for entry to engineering schools
@@ -71,6 +71,6 @@ email: "baptiste.pollien@isae-supaero.fr"
 highlight_name: false
 ---
 
-I am a PhD student at [ISAE-SUPAERO](https://www.isae-supaero.fr/), in Toulouse. My thesis deals with formal methods applied on UAV autopilot, especially, [Paparazzi](https://wiki.paparazziuav.org/wiki/Main_Page) autopilot developed at [ENAC](https://www.enac.fr/). I am currently working on the verification of a mathematical library of Paparazzi using [Frama-C](https://frama-c.com/) with [EVA](https://frama-c.com/fc-plugins/eva.html) and [WP](https://frama-c.com/fc-plugins/wp.html) plugins. I am focusing on the verification of the absence of runtime errors (overflows, divisions by 0...)  but I also verify some functional properties.
+I am a PhD student at [ISAE-SUPAERO](https://www.isae-supaero.fr/), in Toulouse. My thesis deals with formal methods applied on UAV autopilot, especially [Paparazzi](https://wiki.paparazziuav.org/wiki/Main_Page) autopilot developed at [ENAC](https://www.enac.fr/). I am currently working on the verification of a mathematical library of Paparazzi using [Frama-C](https://frama-c.com/) with [EVA](https://frama-c.com/fc-plugins/eva.html) and [WP](https://frama-c.com/fc-plugins/wp.html) plugins. I am focusing on the verification of the absence of runtime errors (overflows, divisions by 0...)  but I also verify some functional properties.
 
 <!-- {{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/demo_resume.pdf" "newtab" >}}resumé{{< /staticref >}}. -->

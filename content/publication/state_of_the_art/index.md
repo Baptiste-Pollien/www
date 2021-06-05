@@ -1,5 +1,5 @@
 ---
-title: "Formal Verification for Autopilot – Preliminary state ofthe art"
+title: "Formal Verification for Autopilot – Preliminary state of the art"
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here 
