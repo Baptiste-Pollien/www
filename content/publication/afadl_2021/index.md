@@ -38,12 +38,12 @@ featured: false
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: 'http://coming_soon.org'
+url_pdf: 'http://www.lirmm.fr/afadl2021/papers/afadl2021_paper_4.pdf'
 url_code: ''
 url_dataset: ''
 url_poster: ''
 url_project: ''
-url_slides: ''
+url_slides: 'uploads/afadl-2021-presentation.pdf'
 url_source: ''
 url_video: ''
 
