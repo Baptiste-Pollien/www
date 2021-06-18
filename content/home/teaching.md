@@ -41,6 +41,6 @@ design:
 ---
 # Teaching assistant
 
-**2021/2021**
+**2020/2021**
 - [Computer Science](https://www.isae-supaero.fr/IMG/pdf/catalogue_2020-21-1a.pdf#page=5), ISAE-SUPAERO, 3rd year undergraduate
 - [Abstract Types and Advanced Functional Programming](https://www.univ-tlse3.fr/syllabus/SYL_L3_INFO.pdf#page=29), Université Toulouse III - Paul Sabatier, 3rd year undergraduate
