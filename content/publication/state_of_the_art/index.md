@@ -42,7 +42,7 @@ featured: false
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: 'https://www.isae-supaero.fr/IMG/pdf/formal_verification_for_autopilot_state-of-the-art.pdf'
+url_pdf: 'https://hal.archives-ouvertes.fr/hal-03255656/document'
 url_code: ''
 url_dataset: ''
 url_poster: ''
