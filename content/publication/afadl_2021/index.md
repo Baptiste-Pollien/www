@@ -38,7 +38,7 @@ featured: false
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: 'http://www.lirmm.fr/afadl2021/papers/afadl2021_paper_4.pdf'
+url_pdf: 'http://www.lirmm.fr/afadl2021/docs/actes-afadl2021.pdf#page=35'
 url_code: ''
 url_dataset: ''
 url_poster: ''
