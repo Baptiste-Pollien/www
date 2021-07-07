@@ -38,7 +38,7 @@ featured: false
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: 'http://www.lirmm.fr/afadl2021/docs/actes-afadl2021.pdf#page=35'
+url_pdf: 'https://hal.archives-ouvertes.fr/hal-03274906/file/Pollien_28071.pdf'
 url_code: ''
 url_dataset: ''
 url_poster: ''
