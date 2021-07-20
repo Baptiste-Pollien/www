@@ -131,7 +131,7 @@ the _preconditions_ specified in the contract of the function.
   usage of cast in the code. Finally, the `ref` option is used to enable optimization for reference parameters.
   - `-wp-prover alt-ergo,cvc4-strings-ce,z3,z3-ce,z3-nobv,coq,tip`:
   adds the different provers needed to verify the goals.
-  ' `-wp-check-memory-model`: Insert memory model hypotheses in the function contracts. Necessary as we use the `ref` memory model.
+  - `-wp-check-memory-model`: Insert memory model hypotheses in the function contracts. Necessary as we use the `ref` memory model.
 - `-cpp-extra-args=-I../include`: adds the include directory of
   Paparazzi.
 - `-cpp-extra-args=-DFRAMA_C_ANALYSIS`: defines a C constant in order
