@@ -53,19 +53,13 @@ Required software
 -----------------
 To run the verification, the following software are required:
 
-- Frama-C, a compiled version from
-[source](https://git.frama-c.com/pub/frama-c) using commit `3fa7de0c`
-- Alt-Ergo 2.3.3
+- Frama-C 23.0 (Vanadium)
+- Alt-Ergo 2.4.0
 - CVC4 1.9-prerelease
 - Z3 4.8.6
 - Coq 8.12.2
-- Why3 1.3.3
+- Why3 1.4.0
 - ctags
-
-**Note:** This specific version of Frama-C is needed because it
-fixes a bug that prevented proving some goals. Also, the
-_statement contracts_ are used in the proofs, but this feature
-has been removed in newer versions.
 
 How to launch the verification process
 --------------------------------------
@@ -132,11 +126,12 @@ the _preconditions_ specified in the contract of the function.
 - `-wp-fct $FUNCTION`: launches the WP verification with the following
   options:
   - `-wp-cache update`: enables and uses cache.
-  - `-wp-model real+Cast`: enables the `real` model to represent the
+  - `-wp-model real+Cast+ref`: enables the `real` model to represent the
   arithmetic on floating-point numbers. The `Cast` option enables the
-  usage of cast in the code.
-  - `-wp-prover alt-ergo,cvc4-strings-ce,z3,z3-ce,z3-nobv,tip`:
+  usage of cast in the code. Finally, the `ref` option is used to enable optimization for reference parameters.
+  - `-wp-prover alt-ergo,cvc4-strings-ce,z3,z3-ce,z3-nobv,coq,tip`:
   adds the different provers needed to verify the goals.
+  ' `-wp-check-memory-model`: Insert memory model hypotheses in the function contracts. Necessary as we use the `ref` memory model.
 - `-cpp-extra-args=-I../include`: adds the include directory of
   Paparazzi.
 - `-cpp-extra-args=-DFRAMA_C_ANALYSIS`: defines a C constant in order
@@ -166,4 +161,3 @@ More information about Paparazzi
 To have information about Paparazzi, go directly on the
 [website](https://wiki.paparazziuav.org/wiki/Main_Page) or on the
 [GitLab project](https://github.com/paparazzi/paparazzi).
-
