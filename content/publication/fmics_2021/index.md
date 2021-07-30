@@ -71,7 +71,7 @@ url_code: ''
 url_dataset: ''
 url_poster: ''
 url_project: ''
-url_slides: ''
+url_slides: 'uploads/fmics-2021-presentation.pdf'
 url_source: ''
 url_video: ''
 
