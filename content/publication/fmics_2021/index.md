@@ -1,5 +1,5 @@
 ---
-title: "Verifying the Mathematical Library of an UAV
+title: "Verifying the Mathematical Library of a UAV
 Autopilot with Frama-C"
 
 # Authors
