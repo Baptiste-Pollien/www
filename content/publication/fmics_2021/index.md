@@ -66,14 +66,15 @@ featured: false
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: ''
+url_pdf: 'uploads/fmics-2021.pdf'
 url_code: ''
 url_dataset: ''
 url_poster: ''
 url_project: ''
 url_slides: 'uploads/fmics-2021-presentation.pdf'
 url_source: ''
-url_video: ''
+url_teaser: 'https://youtu.be/zwXIsqcOlYM'
+url_video: 'https://youtu.be/R8hmYKCchLk?t=1670'
 
 # Associated Projects (optional).
 #   Associate this publication with one or more of your projects.

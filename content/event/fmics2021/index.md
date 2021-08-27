@@ -1,24 +1,31 @@
 ---
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
-Title: "Vérification d’une bibliothèque mathématique d’un autopilote avec Frama-C"
-event: "AFADL 2021"
-location: "Videoconference " 
-abstract: "Lors du développement de système critiques, comme par exemple
-un autopilote de drone, il est essentiel de s’assurer que le programme est sûr,
-en utilisant par exemple des méthodes formelles. Pour faciliter la vérification,
-on se restreint généralement à une abstraction du système ou un sous-ensemble.
-Ce talk présente la vérification d’une bibliothèque mathématique de
-l’autopilote Paparazzi, à l’aide de l’outil Frama-C, afin de garantir
-l’absence d’erreur à l’exécution et certaines propriétés fonctionnelles"
+Title: "Verifying the Mathematical Library of a UAV
+Autopilot with Frama-C"
+event: "FMICS 2021"
+location: "Videoconference" 
+abstract: "Ensuring safety of critical systems is crucial and is often attained
+  by extensive testing of the system. Formal methods are now commonly
+  accepted as powerful tools to obtain guarantees on such systems,
+  even if it is generally not possible to formally prove the safety
+  and correctness of the whole system. This paper presents an
+  ongoing work on the formal verification of the
+  [Paparazzi](https://wiki.paparazziuav.org/wiki/Main_Page) UAV
+  autopilot using the Frama-C verification platform. We focus on a
+  Paparazzi mathematical library providing different UAV state
+  representations and associated conversion functions and manage to
+  prove the absence of runtime errors in the library and some
+  interesting functional properties on floating-point conversion functions."
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-date: 2021-06-18T13:30:00
+date: 2021-08-24T14:30:00
 date_end: 
-all_day: true
+all_day: false
 
-authors: []
+authors: 
+  - admin
 tags: []
 
 # Is this a featured talk? (true/false)
@@ -45,7 +52,7 @@ url_slides: "uploads/afadl-2021-presentation.pdf"
 
 url_code:
 url_pdf:
-url_video: ""
+url_video: "https://youtu.be/R8hmYKCchLk?t=1670"
 
 # Markdown Slides (optional).
 #   Associate this talk with Markdown slides.
