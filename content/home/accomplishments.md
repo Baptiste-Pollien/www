@@ -31,6 +31,15 @@ item:
   organization_url: http://fm.csl.sri.com/SSFT21/
   title: Tenth Summer School on Formal Techniques
   url: ""
+  
+- certificate_url: "uploads/ETR2021.pdf"
+  date_end: ""
+  date_start: "2021-09-20"
+  description: ""
+  organization: ISAE-ENSMA
+  organization_url: https://etr2021.ensma.fr/
+  title: École d'Été Temps Réel
+  url: "https://etr2021.ensma.fr/"
 
 design:
   columns: '2' 
