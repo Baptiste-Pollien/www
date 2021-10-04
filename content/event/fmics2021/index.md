@@ -48,7 +48,7 @@ image:
 #   icon: twitter
 
 # Optional filename of your slides within your talk's folder or a URL.
-url_slides: "uploads/afadl-2021-presentation.pdf"
+url_slides: "uploads/fmics-2021-presentation.pdf"
 
 url_code:
 url_pdf:
