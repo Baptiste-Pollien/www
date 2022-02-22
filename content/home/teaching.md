@@ -42,7 +42,9 @@ design:
 # Teaching assistant
 
 **2021/2022**
-- [Languages translation](http://formations.enseeiht.fr/en/our-courses/diplome-d-ingenieur-FC_DI/diplome-D/ingenieur-enseeiht-informatique-et-telecommunications-program-program1-n7i5-171-en/ingenieur-enseeiht-informatique-et-telecommunications-2eme-annee-subprogram-subprogram-n7i52-181-en/annee-2a-sn-fise-NDEN/choix-de-parcours-semestre-7-2a-sn-fise-N7ENA/semestre-7-sn-fise-parcours-image-et-multimedia-N7ENAM/base-de-la-programmation-fonct-et-traduction-des-langages-N7EN08/traduction-des-langages-N7EN08B.html), ENSEEIHT, 1st year graduate 
+- [Languages translation](http://formations.enseeiht.fr/en/our-courses/diplome-d-ingenieur-FC_DI/diplome-D/ingenieur-enseeiht-informatique-et-telecommunications-program-program1-n7i5-171-en/ingenieur-enseeiht-informatique-et-telecommunications-2eme-annee-subprogram-subprogram-n7i52-181-en/annee-2a-sn-fise-NDEN/choix-de-parcours-semestre-7-2a-sn-fise-N7ENA/semestre-7-sn-fise-parcours-image-et-multimedia-N7ENAM/base-de-la-programmation-fonct-et-traduction-des-langages-N7EN08/traduction-des-langages-N7EN08B.html), ENSEEIHT, 1st year graduate
+- [Computer Science](https://www.isae-supaero.fr/IMG/pdf/catalogue_2020-21-1a.pdf#page=5), ISAE-SUPAERO, 3rd year undergraduate
+- [Abstract Types and Advanced Functional Programming](https://www.univ-tlse3.fr/syllabus/SYL_L3_INFO.pdf#page=29), Université Toulouse III - Paul Sabatier, 3rd year undergraduate
 
 **2020/2021**
 - [Computer Science](https://www.isae-supaero.fr/IMG/pdf/catalogue_2020-21-1a.pdf#page=5), ISAE-SUPAERO, 3rd year undergraduate
