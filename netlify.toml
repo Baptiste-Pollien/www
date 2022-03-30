@@ -5,6 +5,8 @@
 [build.environment]
   HUGO_VERSION = "0.91.0"
   HUGO_ENABLEGITINFO = "true"
+  GOCACHE="/opt/buildhome/"
+  GO_VERSION="1.15"
 
 [context.production.environment]
   HUGO_ENV = "production"
