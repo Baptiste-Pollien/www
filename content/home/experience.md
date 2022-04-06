@@ -53,7 +53,7 @@ experience:
     date_end: '2018-09-15'
     description: |2-
         Commissioned by the NSIGMA Junior entreprise of ENSIMAG.        
-        * Developed a mobile application using Ionic framework and inte- grated MondialRelay (Delivery system) and Mangopay (Payment system) API.
+        * Developed a mobile application using Ionic framework and integrated MondialRelay (Delivery system) and Mangopay (Payment system) API.
         * Developed a e-commerce website using Prestashop CMS.
   - title: Placement in a national research institution
     company: INRIA
