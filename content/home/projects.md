@@ -29,6 +29,8 @@ content:
     tag: '*'
   - name: Frama-C
     tag: Frama-C
+  - name: Coq
+    tag: Coq
   - name: Other
     tag: Demo
 
