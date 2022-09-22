@@ -44,12 +44,12 @@ url_video: ""
 # VFPG: Verified Flight Plan Generator
 
 **VFPG** is a generator of flight plan developed in Ocaml and Coq. The
-generator takes as input an XML describing the a flight plan and it
+generator takes as input an XML describing a flight plan and it
 generates a C code that can be compiled and embedded on a drone.
 
 This project is mainely designed to work with the Paparazzi UAV autopilot
-(https://github.com/paparazzi/paparazzi). However, the generator has a
-modular architecture that can be adapted to support easily others
+<https://github.com/paparazzi/paparazzi>. However, the generator has a
+modular architecture that can be adapted to easily support other
 autopilots.
 
 ## Dependencies
@@ -81,9 +81,9 @@ opam install coq-mathcomp-ssreflect
 
 The project needs the source of
 [Paparazzi](https://github.com/paparazzi/paparazzi) and
-[CompCert](https://github.com/AbsInt/CompCert). The sources must be modified and
-compiled in order to use the generator. These steps can be easily retrieved
-with the following script.
+[CompCert](https://github.com/AbsInt/CompCert)@9d3521b4. The sources must
+be modified and compiled in order to use the generator. These steps can be
+easily retrieved with the following script.
 
 ```bash
 ./configure
@@ -94,6 +94,8 @@ The generator can then be built using the Makefile.
 ```bash
 make build
 ```
+
+The description of the build process is described [here](./docs/build.md)
 
 The generator can then be used with the following command:
 
@@ -107,11 +109,13 @@ The Makefile can also launch tests.
 make tests
 ```
 
+All the tests available are described [here](./docs/tests.md)
+
 It is also possible to test the Clight generator using the command:
 
 ```bash
 make CommonFP
-````
+```
 
 This command will use `CompCert` to generate a Clight version of the file
 `common-c-code/common_flight_plan.c` (saved in the file
@@ -120,22 +124,22 @@ CompCert printer. The result is written in `out/common_flight_plan.h` file.
 
 ## Description of folders in the project
 
-- `common-c-code`: The common C code for all the flight plan.
-- `docs`: The documentation of the project.
-- `frontend`: The frontend Ocaml code for the generator.
-- `generated`: The Clight file generated with `clightgen`. They are stored as
+* `common-c-code`: The common C code for all the flight plan.
+* `docs`: The documentation of the project.
+* `frontend`: The frontend Ocaml code for the generator.
+* `generated`: The Clight files generated with `clightgen`. They are stored as
    they are used in Coq proofs.
-- `ocaml-generator`: The Ocaml code of the previous Flight Plan generator of
+* `ocaml-generator`: The Ocaml code of the previous Flight Plan generator of
 Paparazzi. This code has been extracted from the whole Paparazzi project for
 testing purpose. In this folder you can find:
-    * The folder `src` containing the main source of the previous generator.
-    * The folder `src_paparazzi` that contains all the libraries needed by the
-    generator.
-    * The script `run.sh` that build and run the generator. It will produce in
+  * The folder `src` containing the main source of the previous generator.
+  * The folder `src_paparazzi` that contains all the libraries needed by the
+  generator.
+  * The script `run.sh` that build and run the generator. It will produce in
     the `out` folder the C flight plan corresponding to `examples/new_features.xml`.
-- `src`: All the Coq sources of the generator.
-- `tests`: The scripts that launch all tests.
-- `tools`: Script use during the build process.
+* `src`: All the Coq sources of the generator. A description of these files can be found [here](./docs/coq-descr-files.md).
+* `tests`: The scripts that launch all tests described [here](./docs/tests.md).
+* `tools`: Script use during the [build process](./docs/build.md)
 
 ## Generate Coq Doc
 
@@ -144,32 +148,37 @@ make doc
 firefox html/toc.html
 ```
 
+A description of all Coq files can be found [here](./docs/coq-descr-files.md).
 
 ## New Features added
-- Forbidden deroute: Possibility to forbidden certain deroute between blocks.
-- Height added to the oval (not added everywhere)
+
+* Forbidden deroute: Possibility to forbid certain deroute between blocks.
+* The filed `on_enter` and `on_exit` has been added for the blocks.
+* Height added to the oval (not added everywhere)
+* Return an errors if a flight plan contains more thant 256 blocks or stages.
 
 ## Current Limitations
 
 Currently, all the features are not implemented and some modifications from
 the original flight plan generator has been made:
-- When a C code is used for a condition, we considered that the
-  execution return an integer value, evaluated has a boolean (returned value
-  are converted into 0 or 1 only).
-- The parameter `last_wp` is a string.
-- Exceptions and forbidden deroute in loop are ignored.
-- `on_enter` option do not work for the first block.
-- If the next block is forbidden then the execution state do not change.
-- If there is a exception but the block is forbidden, then no deroute will
-occur.
-- The field `exec` must an instruction.
-- The constant `NB_BLOCK` have been replaced by the a constante variable.
-- When there is a deroute, the current stage it is not change. In the case of a return, we jump in the deroute stage.
 
+* When a C code is used for a condition, we considered that the
+  execution return an integer value, evaluated as a boolean (returned value
+  are converted into 0 or 1 only).
+* The parameter `last_wp` is a string.
+* Exceptions and forbidden deroute in loops are ignored.
+* `on_enter` option do not work for the first block.
+* If the next block is forbidden then the execution state does not change.
+* If there is an exception but the block is forbidden, then no deroute will
+  occur.
+* The field `exec` must be an instruction.
+* The constant `NB_BLOCK` has been replaced by constant variables.
+* When there is a deroute, the current stage is not changed. In the case
+  of a return, we jump in the deroute stage.
+* TODO: The proof uses a simplified version of the whole CommonFP.
 
 ## More information about Paparazzi
 
 To have information about Paparazzi, go directly on the
 [website](https://wiki.paparazziuav.org/wiki/Main_Page) or on the
 [GitLab project](https://github.com/paparazzi/paparazzi).
-
