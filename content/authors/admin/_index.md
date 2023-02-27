@@ -19,6 +19,7 @@ bio: My research interests focus on formal methods applied for UAV Autopilot.
 # Interests to show in About widget
 interests:
 - Formal Methods
+- Coq
 - Frama-C
 - Critical Systems
 - UAV Autopilots
