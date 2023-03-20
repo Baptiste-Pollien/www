@@ -95,7 +95,7 @@ The generator can then be built using the Makefile.
 make build
 ```
 
-The description of the build process is described [here](./docs/build.md)
+The description of the build process is described [here](https://gitlab.isae-supaero.fr/b.pollien/vfpg/-/blob/master/docs/build.md)
 
 The generator can then be used with the following command:
 
@@ -109,7 +109,7 @@ The Makefile can also launch tests.
 make tests
 ```
 
-All the tests available are described [here](./docs/tests.md)
+All the tests available are described [here](https://gitlab.isae-supaero.fr/b.pollien/vfpg/-/blob/master/docs/tests.md)
 
 It is also possible to test the Clight generator using the command:
 
@@ -137,9 +137,9 @@ testing purpose. In this folder you can find:
   generator.
   * The script `run.sh` that build and run the generator. It will produce in
     the `out` folder the C flight plan corresponding to `examples/new_features.xml`.
-* `src`: All the Coq sources of the generator. A description of these files can be found [here](./docs/coq-descr-files.md).
-* `tests`: The scripts that launch all tests described [here](./docs/tests.md).
-* `tools`: Script use during the [build process](./docs/build.md)
+* `src`: All the Coq sources of the generator. A description of these files can be found [here](https://gitlab.isae-supaero.fr/b.pollien/vfpg/-/blob/master/docs/coq-descr-files.md).
+* `tests`: The scripts that launch all tests described [here](https://gitlab.isae-supaero.fr/b.pollien/vfpg/-/blob/master/docs/tests.md).
+* `tools`: Script use during the [build process](https://gitlab.isae-supaero.fr/b.pollien/vfpg/-/blob/master/docs/build.md)
 
 ## Generate Coq Doc
 
@@ -148,7 +148,7 @@ make doc
 firefox html/toc.html
 ```
 
-A description of all Coq files can be found [here](./docs/coq-descr-files.md).
+A description of all Coq files can be found [here](https://gitlab.isae-supaero.fr/b.pollien/vfpg/-/blob/master/docs/coq-descr-files.md).
 
 ## New Features added
 
