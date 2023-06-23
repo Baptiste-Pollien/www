@@ -1,23 +1,18 @@
 ---
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
-Title: "A Verified UAV Flight Plan Generator"
-event: "FormaliSE 2023"
-location: "Melbourne" 
+Title: "Formal verification of an UAV autopilot"
+event: "JDD @ DISC 2023"
+location: "ISAE-SUPAERO" 
 abstract: ""
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-date: 2023-05-15T14:15:00
+date: 2023-06-23T10:30:00
 date_end: 
-all_day: false
+all_day: true
 
-authors: 
-- admin
-- cgarion
-- ghattenberger
-- proux
-- xthirioux
+authors: []
 tags: []
 
 # Is this a featured talk? (true/false)
@@ -40,7 +35,7 @@ image:
 #   icon: twitter
 
 # Optional filename of your slides within your talk's folder or a URL.
-url_slides: "uploads/formalise-2023-presentation.pdf"
+url_slides: "uploads/jdd-sup-2023.pdf"
 
 url_code:
 url_pdf:
@@ -58,7 +53,6 @@ slides: ""
 #   Simply enter your project's folder or file name without extension.
 #   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
 #   Otherwise, set `projects = []`.
-projects:
-- vpfg
+projects: []
 ---
 
