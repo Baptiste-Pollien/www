@@ -20,17 +20,17 @@ twitter: ''
 
 # Contact (edit or remove options as required)
 
-email: baptiste.pollien@isae-supaero.fr
+email: baptiste.pollien@renault.com
 phone: 
 address:
-  street: ISAE-SUPAERO, 10 avenue Edouard Belin
+  street: Ampere Software Technology, 2 avenue du Dr Maurice Grynfogel
   city: Toulouse
-  postcode: '31055'
+  postcode: '31100'
   country: France
   country_code: FR
 coordinates:
-  latitude: '43.56528'
-  longitude: '1.475481'
+  latitude: '43.5788529'
+  longitude: '1.3788942'
 # directions: Enter Building 1 and take the stairs to Office 200 on Floor 2
 # office_hours:
 #   - 'Monday 10:00 to 13:00'

@@ -22,6 +22,25 @@ date_format: Jan 2006
 #   Leave `date_end` empty if it's your current employer.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
+  - title: Software Engineer HMI
+    company: Ampere Software Technology
+    company_url: 'https://brand.ampere.cars/'
+    company_logo: ampere
+    location: Toulouse, France
+    date_start: '2023-11-02'
+    description: "I am a Software Engineer HMI at [Ampere Software Technology](https://www.ampere.cars/), working on the [Software Defined Vehicle](https://www.renaultgroup.com/news-onair/actualites/tout-savoir-sur-le-software-defined-vehicle/) (SDV) project."
+  - title: PhD Student
+    company: ISAE-SUPAERO
+    company_url: 'https://www.isae-supaero.fr/fr/'
+    company_logo: isae
+    location: Toulouse, France
+    date_start: '2020-10-01'
+    date_end: '2023-09-30'
+    description: |2-
+      Formal Verification of an UAV autopilot:
+
+      * Verification of a mathematical library used by the control system with static code analysis techniques.
+      * Verification of a flight plan generator producing embedded C code, using code generation verification techniques.
   - title: Embedded Software Intern
     company: Thales
     company_url: 'https://www.thalesgroup.com/'

@@ -1,35 +1,35 @@
 ---
 # Display name
-title: Baptiste Pollien
+title: Baptiste Pollien, PhD
 
 # Is this the primary user of the site?
 superuser: true
 
 # Role/position/tagline
-role: PhD Student in Formal Methods
+role: Software Engineer HMI
 
 # Organizations/Affiliations to show in About widget
 organizations:
-- name: ISAE-SUPAERO
-  url: https://www.isae-supaero.fr/fr/
+- name: Ampere Software Technology
+  url: https://www.ampere.cars/
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests focus on formal methods applied for UAV Autopilot.
+bio: I am a Software Engineer HMI at Ampere Software Technology.
 
 # Interests to show in About widget
 interests:
 - Formal Methods
-- Coq
-- Frama-C
+- Rust
 - Critical Systems
-- UAV Autopilots
+- Automotives
+- Coq
 
 # Education to show in About widget
 education:
   courses:
   - course: PhD in Formal Methods
     institution: ISAE-SUPAERO - Toulouse, FRANCE
-    year: Present
+    year: 2023 - 2020
   - course: Master’s Degree in Engineering
     institution: ENSIMAG - Grenoble, FRANCE
     year: 2020 - 2017
@@ -66,12 +66,14 @@ social:
 #   link: uploads/resume.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
-email: "baptiste.pollien@isae-supaero.fr"
+email: "baptiste.pollien@renault.com"
 
 # Highlight the author in author lists? (true/false)
 highlight_name: false
 ---
 
-I am a PhD student at [ISAE-SUPAERO](https://www.isae-supaero.fr/), in Toulouse. My thesis deals with formal methods applied on UAV autopilot, especially [Paparazzi](https://wiki.paparazziuav.org/wiki/Main_Page) autopilot developed at [ENAC](https://www.enac.fr/). I am currently working on the verification of the Paparazzi flight plan generator using [Coq](https://coq.inria.fr/). I previously worked on the verification of a mathematical library of Paparazzi using [Frama-C](https://frama-c.com/) with [EVA](https://frama-c.com/fc-plugins/eva.html) and [WP](https://frama-c.com/fc-plugins/wp.html) plugins. I focused on the verification of the absence of runtime errors (overflows, divisions by 0…) but I also verified some functional properties.
+I am a Software Engineer HMI at [Ampere Software Technology](https://www.ampere.cars/), working on the [Software Defined Vehicle](https://www.renaultgroup.com/news-onair/actualites/tout-savoir-sur-le-software-defined-vehicle/) (SDV) project.
+
+I defended my thesis in November 2023, Formal Verification of an UAV autopilot: Static analysis and Verified Code Generation. My thesis deals with formal methods applied on UAV autopilot, especially [Paparazzi](https://wiki.paparazziuav.org/wiki/Main_Page) autopilot developed at [ENAC](https://www.enac.fr/). I worked on the verification of a mathematical library of Paparazzi using [Frama-C](https://frama-c.com/) with [EVA](https://frama-c.com/fc-plugins/eva.html) and [WP](https://frama-c.com/fc-plugins/wp.html) plugins. I focused on the verification of the absence of runtime errors (overflows, divisions by 0…) but I also verified some functional properties. I also worked on the verification of the Paparazzi flight plan generator using [Coq](https://coq.inria.fr/). I formalised the flight plan semantics of the input language and I have proved the correctness of the generator.
 
 <!-- {{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/demo_resume.pdf" "newtab" >}}resumé{{< /staticref >}}. -->
